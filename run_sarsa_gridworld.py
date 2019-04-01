@@ -10,7 +10,7 @@ if __name__ == '__main__':
     grid_env = GridWorld() # grid worldの環境の初期化
     ini_state = grid_env.start_pos  # 初期状態（エージェントのスタート地点の位置）
     policy = EpsGreedyQPolicy(epsilon=0.01) # 方策の初期化。ここではε-greedy
-    agent = SARSAAgent(actions=np.arange(4), observation=ini_state, policy=policy) # Q Learning エージェントの初期化
+    agent = SARSAAgent(actions=np.arange(4), observation=ini_state, policy=policy) # sarsa エージェントの初期化
     nb_episode = 100   #エピソード数
     rewards = []    # 評価用報酬の保存
     is_goal = False # エージェントがゴールしてるかどうか？
