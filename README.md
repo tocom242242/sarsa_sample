@@ -12,5 +12,3 @@ git clone https://github.com/tocom242242/sarsa_sample.git
 ```
 python run_sarsa_gridworld.py
 ```
-## Blog
-https://www.tcom242242.net/entry/2019/03/29/171238
